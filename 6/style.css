@@ -24,7 +24,7 @@
   text-wrap: balance;
 }
 
-@container (width <= 550px) {
+@container card (width <= 550px) {
   .card {
     background: black;
   }

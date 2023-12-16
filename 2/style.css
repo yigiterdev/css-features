@@ -5,8 +5,7 @@
 }
 
 .card-container {
-  container-name: card-container;
-  container: inline-size;
+  container: card-container / inline-size;
 }
 
 .card {
@@ -23,19 +22,19 @@
   font-size: 30px;
 }
 
-@container style(--red: true) {
+@container card-container style(--red: true) {
   .card {
     background: red;
   }
 }
 
-@container style(--blue: true) {
+@container card-container style(--blue: true) {
   .card {
     background: blue;
   }
 }
 
-@container style(--green: true) {
+@container card-container style(--green: true) {
   .card {
     background: green;
   }
