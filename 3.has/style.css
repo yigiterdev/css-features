@@ -14,7 +14,6 @@
     justify-content: center;
     background: red;
     color: white;
-    font-size: 14px;
   }
 
   &:has(img) {
