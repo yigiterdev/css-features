@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Popover</title>
+  </head>
+  <body>
+    <button popovertarget="my-popover" class="trigger-btn">Open Popover</button>
+
+    <div id="my-popover" popover="manual">
+      <button class="close-btn" popovertarget="my-popover" popovertargetaction="hide">
+        <span aria-hidden="”true”">❌</span>
+        <span class="sr-only">Close</span>
+      </button>
+      <p>I am a popover with more information.</p>
+      <p></p>
+    </div>
+  </body>
+</html>

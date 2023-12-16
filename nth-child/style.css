@@ -1,0 +1,32 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+
+  background: green;
+  color: white;
+
+  font-size: 32px;
+
+  &:nth-child(2) {
+    color: black;
+    background: pink;
+  }
+}
+
+:nth-child(1 of .highlight) {
+  background: blue;
+}
+
+:nth-child(2 of .highlight) {
+  background: orange;
+}

@@ -1,0 +1,23 @@
+.card-list {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 16px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+
+  &:has(h1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    color: white;
+    font-size: 14px;
+  }
+
+  &:has(img) {
+    cursor: pointer;
+  }
+}

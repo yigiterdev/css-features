@@ -1,0 +1,42 @@
+.card-list {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 12px;
+}
+
+.card-container {
+  container-name: card-container;
+  container: inline-size;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+
+  background: purple;
+  color: white;
+
+  font-size: 30px;
+}
+
+@container style(--red: true) {
+  .card {
+    background: red;
+  }
+}
+
+@container style(--blue: true) {
+  .card {
+    background: blue;
+  }
+}
+
+@container style(--green: true) {
+  .card {
+    background: green;
+  }
+}

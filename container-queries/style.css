@@ -1,0 +1,28 @@
+.card-container {
+  container-name: "card-container";
+  container: card-container / inline-size;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  color: red;
+}
+
+@container (width <= 550px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    display: block;
+  }
+}

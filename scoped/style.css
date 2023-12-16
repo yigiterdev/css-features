@@ -1,0 +1,23 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 24px;
+}
+
+@scope (.list) {
+  .title {
+    color: blue;
+  }
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 200px;
+  height: 200px;
+}
+
+@scope (.card) {
+  .title {
+    color: red;
+  }
+}

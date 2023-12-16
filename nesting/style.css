@@ -1,0 +1,39 @@
+.container {
+  container: card / inline-size;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 20px;
+
+  background: green;
+  color: white;
+
+  border-radius: 8px;
+}
+
+.card h1 {
+  font-size: 32px;
+  margin: 0 0 20px;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 0;
+  text-wrap: balance;
+}
+
+@container (width <= 550px) {
+  .card {
+    background: black;
+  }
+
+  .card h1 {
+    color: red;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}
